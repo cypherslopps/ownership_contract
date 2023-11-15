@@ -1,12 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract FirstContract is Ownable {
     string private _greeting = "Hello, World!";
-    address private _owner;
-    string public hey;
 
     function greet() public view returns(string memory) {
         return _greeting;
